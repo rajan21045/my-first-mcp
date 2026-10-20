@@ -1,0 +1,30 @@
+{
+  "name": "@rajan21045/my-first-mcp",
+  "version": "1.1.0",
+  "description": "My first MCP server",
+  "main": "build/index.js",
+  "type": "module",
+  "bin": {
+    "my-first-mcp": "build/index.js"
+  },
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.0.0"
+  }
+}
